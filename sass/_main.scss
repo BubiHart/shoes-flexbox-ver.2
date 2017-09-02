@@ -1,6 +1,94 @@
 header
 {
-  width: 100%;
+  @include flex;
+  @include pure_section;
   height: 45px;
-  background-color: green;
+  background-color: $header_background;
+}
+
+.header-wrapper
+{
+  @include flex;
+  @include wrapper;
+  background-color: $header_background;
+}
+
+.header-wrapper__logo
+{
+  @include flex;
+  height: 100%;
+  width: 160px;
+  margin-left: 15px;
+  background-color: $header_background;
+}
+
+.header-wrapper__logo-text
+{
+  @include reset;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -2.3px;
+  margin: auto;
+  color: $logo_color;
+  @include caps;
+}
+
+.header-wrapper__search-icon
+{
+  background-image: url("../img/search_icon.png");
+  @include no-repeat;
+  width: 13.9px;
+  height: 14px;
+  margin-left: auto;
+  margin: 15px 24px 15px auto;
+}
+
+.header-wrapper__login-register
+{
+  @include flex;
+  width: 138px;
+  height: 100%;
+  border-left: 1px solid #7e7e7e;
+  border-right: 1px solid #7e7e7e;
+  margin-right: 42px;
+  background-color: $header_background;
+}
+
+.header-wrapper__login-register__text
+{
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+.header-wrapper__login-register__text a
+{
+  font-size: 11px;
+  line-height: 25px;
+  text-align: center;
+  color: #7e7e7e;
+  @include caps;
+}
+
+.header-wrapper__login-register__text a:hover
+{
+  color: $logo_color;
+  cursor: pointer;
+}
+
+
+.header-wrapper__login-register__text a:link, a:visited
+{
+    color: #7e7e7e;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.header-wrapper__login-register__text span
+{
+  font-size: 11px;
+  line-height: 25px;
+  text-align: center;
+  color: #7e7e7e;
 }

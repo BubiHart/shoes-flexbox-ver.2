@@ -455,32 +455,37 @@ template {
  * Add the correct display in IE 10-.
  */
 
-[hidden] {
+[hidden]
+{
   display: none;
 }
 
 /*My own changes*/
 
-a{
+a
+{
 	text-decoration: none;
 }
 
-ul{
+ul
+{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+li
+{
     display: inline-block;
 }
 
-.clearfix::after {
+.clearfix::after
+{
 
     content: "";
-    
+
     display: table;
-    
+
     clear: both;
 
 }
